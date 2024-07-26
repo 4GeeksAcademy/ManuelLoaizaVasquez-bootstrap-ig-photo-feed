@@ -84,7 +84,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <!-- TODO: Change this with a text area and two file input icons -->
+          <!-- TODO: Add a text area and two file input icons -->
           <div class="modal-body">
             <p>Caption</p>
           </div>
@@ -121,6 +121,7 @@
           class="nav-link"
           id="in-tab"
           data-bs-toggle="tab"
+          data-bs-target="#in-tab-pane"
           aria-controls="in-tab-pane"
           href="#"
         >
@@ -129,6 +130,8 @@
       </li>
     </ul>
 
+    <!-- Grid tab -->
+    <!-- TODO: Fix height of all images -->
     <div class="tab-content">
       <div
         class="tab-pane fade show active"
@@ -209,13 +212,101 @@
           </div>
         </div>
       </div>
+
+      <!-- In feed tab -->
+      <!-- TODO: Fix width of all images -->
       <div
         class="tab-pane fade"
         role="tabpanel"
         id="in-tab-pane"
         aria-labelledby="in-tab"
         tabindex="0"
-      ></div>
+      >
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-6 mx-auto">
+              <div class="card px-0">
+                <div class="card-header bg-white">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="mb-0">Retroactive Data Structures</h4>
+                    <p class="mb-0">2/3</p>
+                  </div>
+                </div>
+                <img
+                  src="https://media.wired.com/photos/6290daf9435f8ce337be45b9/master/w_1600%2Cc_limit/demaines-2-quanta.jpg"
+                  class="img-fluid w-100 object-fit-cover"
+                  alt="Erik Demaine"
+                />
+                <div class="card-body">
+                  <p class="card-text mb-0">
+                    <b>66 likes</b>
+                  </p>
+                  <p class="card-text">
+                    Erik D. Demaine, John Iacono, and Stefan Langerman,
+                    “Retroactive Data Structures”, ACM Transactions on
+                    Algorithms, volume 3, number 2, May 2007, Article 13.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-6 mx-auto">
+              <div class="card px-0">
+                <div class="card-header bg-white">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="mb-0">Fine-Grained Complexity</h4>
+                    <p class="mb-0">5/7</p>
+                  </div>
+                </div>
+                <img
+                  src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201711/MIT-Williams-Ryan-01.jpg?itok=XM8syIWB"
+                  class="img-fluid w-100 object-fit-cover"
+                  alt="Ryan Williams"
+                />
+                <div class="card-body">
+                  <p class="card-text mb-0">
+                    <b>819 likes</b>
+                  </p>
+                  <p class="card-text">
+                    S. Akmal, L. Chen, C. Jin, M. Raj, and R. R. Williams.
+                    Improved Merlin-Arthur Protocols for Central Problems in
+                    Fine-Grained Complexity. In 13th Annual Innovations in
+                    Theoretical Computer Science Conference (ITCS 2022).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-6 mx-auto">
+              <div class="card px-0">
+                <div class="card-header bg-white">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="mb-0">Remote First at Quora</h4>
+                    <p class="mb-0">11/13</p>
+                  </div>
+                </div>
+                <img
+                  src="https://cdn.kqed.org/wp-content/uploads/sites/10/2020/07/adam-d.jpeg"
+                  class="img-fluid w-100 object-fit-cover"
+                  alt="Adam D'Angelo"
+                />
+                <div class="card-body">
+                  <p class="card-text mb-0">
+                    <b>1729 likes</b>
+                  </p>
+                  <p class="card-text">
+                    CEO of Quora, founder of Poe, former CTO of Facebook, silver
+                    medal at the 2004 ICPC WF, silver medal at the 2002 IOI,
+                    California Institute of Technology (BS).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Scripts -->
