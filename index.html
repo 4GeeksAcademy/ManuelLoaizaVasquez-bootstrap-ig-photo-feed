@@ -10,10 +10,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+    />
   </head>
+
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar fixed-top bg-body-tertiary bg-light px-5">
+    <!-- REMARK: I removed fixed-top because it was appearing when scrolling down. -->
+    <nav class="navbar bg-body-tertiary bg-light px-5 mb-3">
       <!-- Brand -->
       <a class="navbar-brand" href="#">
         <i class="fa-brands fa-instagram"></i>
@@ -54,8 +67,8 @@
       </div>
     </nav>
 
-    <!-- REMARK: Everything faded when used immediately after the post trigger, so I moved the model to this place. -->
     <!-- Post modal -->
+    <!-- REMARK: Everything faded when used immediately after the post trigger, so I moved the modal to this place. -->
     <div class="modal fade" id="postModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -87,57 +100,18 @@
     </div>
 
     <!-- Feed -->
-    <!-- <ul class="nav nav-tabs" id="feed" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="gridTab"
-          data-bs-toggle="tab"
-          data-bs-target="#home-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="home-tab-pane"
-          aria-selected="true"
-        >
-          <i class="fa-solid fa-square"></i>
-        </button>
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">
+          <i class="bi bi-grid-3x3"></i>
+        </a>
       </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="inFeedTab"
-          data-bs-toggle="tab"
-          data-bs-target="#profile-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="profile-tab-pane"
-          aria-selected="false"
-        >
-          <i class="fa-solid fa-square"></i>
-        </button>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-square-fill"></i>
+        </a>
       </li>
     </ul>
-
-    <div class="tab-content" id="myTabContent">
-      <div
-        class="tab-pane fade show active"
-        id="gridTabPane"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-        tabindex="0"
-      >
-        A
-      </div>
-      <div
-        class="tab-pane fade"
-        id="inFeedTabPane"
-        role="tabpanel"
-        aria-labelledby="profile-tab"
-        tabindex="0"
-      >
-        B
-      </div>
-    </div> -->
 
     <!-- Scripts -->
     <script
