@@ -105,16 +105,50 @@
     <!-- Feed -->
     <ul class="nav nav-tabs justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">
+        <button
+          class="nav-link active"
+          id="grid-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#grid-tab-pane"
+          aria-controls="grid-tab-pane"
+          href="#"
+        >
           <i class="bi bi-grid-3x3"></i>
-        </a>
+        </button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <button
+          class="nav-link"
+          id="in-tab"
+          data-bs-toggle="tab"
+          aria-controls="in-tab-pane"
+          href="#"
+        >
           <i class="bi bi-square-fill"></i>
-        </a>
+        </button>
       </li>
     </ul>
+
+    <div class="tab-content">
+      <div
+        class="tab-pane fade show active"
+        role="tabpanel"
+        id="grid-tab-pane"
+        aria-labelledby="grid-tab"
+        tabindex="0"
+      >
+        Messi
+      </div>
+      <div
+        class="tab-pane fade"
+        role="tabpanel"
+        id="in-tab-pane"
+        aria-labelledby="in-tab"
+        tabindex="0"
+      >
+        CR7
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script
